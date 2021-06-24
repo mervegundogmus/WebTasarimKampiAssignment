@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note-To-Do App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+    <div class="container" style ="margin-top:50px;">
+        <div class="card row">
+            <div class="card-header">Note To Do</div>
+            <div class="card-body">
+              
+                <h5 class="card-title" id = "tasks-title">Görev Ekle</h5>
+
+        <form class="d-flex" id="frmTodo">
+              <div class="form-group col-md-9">
+            <input id="inputTask" type="text" class="form-control" placeholder="Görev ekleyin.." required>
+            <button class="btn btn-primary">EKLE</button>
+              </div>
+        </form>
+        <hr>
+
+        <ul id="todos" class="list-unstyled mt-3 todo-list"></ul>
+        <small>
+            (Double click the item to delete.)
+        </small>
+    
+        <hr>
+
+        
+            <h5 class="card-title" id = "tasks-title">Görevleri Ara</h5>
+            <div class="form-row">
+                <div class="form-group col-md-9">
+                        <input class="form-control" type="text" name="filter" id = "filter" placeholder="Görevleri arayın..">
+                    </div></div>
+            
+
+            <hr>
+            <ul class="list-group">
+   
+            </ul>
+            <hr>  
+            <div class="form-group col-md-9">
+            <a id = "clear-todos" class="btn btn-success" href="#">BİTTİ</a>               
+            </div>
+
+</div>
+    </div>
+    </div>
+
+    
+    <script src="libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/site.js"></script>
+</body>
+</html>
